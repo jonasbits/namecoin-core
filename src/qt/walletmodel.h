@@ -220,6 +220,8 @@ public:
     // Requires unlocked wallet; can throw exception instead of returning error
     QString nameUpdate(const QString &name, const QString &data, const QString &transferToAddress);
 
+    bool transactionCanBeAbandoned(uint256 hash) const;
+    bool abandonTransaction(uint256 hash) const;
 
 private:
     CWallet *wallet;
