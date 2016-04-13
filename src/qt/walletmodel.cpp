@@ -892,6 +892,7 @@ QString WalletModel::nameUpdate(const QString &name, const QString &data, const 
         return QString::fromStdString(errorStr);
     }
     return tr ("");
+}
 
 bool WalletModel::transactionCanBeAbandoned(uint256 hash) const
 {
